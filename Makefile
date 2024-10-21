@@ -10,6 +10,9 @@ instructions:
 setup:
 	python3 -m venv $(VENV_DIR)
 	source $(VENV_DIR)/bin/activate && pip install -r requirements.txt
+	echo "#!/bin/bash" > .git/hooks/post-commit
+	echo "source $(VENV_DIR)/bin/activate && python3 ./scripts/post-commit.py" >> .git/hooks/post-commit
+	chmod +x .git/hooks/post-commit
 
 run:
 	source $(VENV_DIR)/bin/activate && python app.py
