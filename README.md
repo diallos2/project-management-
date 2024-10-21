@@ -7,10 +7,11 @@ diallos@uni.edu
 
 Use following "make" commands to build and run this project.
 
-|Target | Description 
-|'setup'| creates a virtual environment, starts it and runs it's dependencies.  
-|'run'  | runs flask app using a virtual environment.
-|'clean'| removes virtual environment and any '__pycache__".
+|Target | Description                                                          |
+|-------|----------------------------------------------------------------------|
+|'setup'| creates a virtual environment, starts it and runs it's dependencies. | 
+|'run'  | runs flask app using a virtual environment.                          |
+|'clean'| removes virtual environment and any '__pycache__".                   |
 
 
 ## License
